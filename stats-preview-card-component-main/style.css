@@ -1,0 +1,126 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: hsl(233, 47%, 7%);
+	font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+}
+main{
+	width: 75%;
+	height: 580px;
+	margin: auto;
+	margin-top: 15px;
+	background-color: hsl(244, 38%, 16%);
+	border-radius: 10px;
+}
+.image{
+	height: 180px;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	background-blend-mode: multiply;
+	background-image: url(./images/image-header-mobile.jpg);
+	background-color: hsl(277, 64%, 61%);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.text h2{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	font-weight: 700;
+	color: white;
+	width: 80%;
+	text-align: center;
+	letter-spacing: .5px;
+}
+.text h2 span{
+	color: hsl(277, 64%, 61%);
+}
+.text p{
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	width: 75%;
+	font-weight: 400;
+	font-size: 12px;
+	font-family: 'Lexend Deca', sans-serif;
+	color: hsla(0, 0%, 100%, 0.75);
+	text-align: center;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+.company, .template, .queries{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+	text-align: center;
+	color: hsla(0, 0%, 100%, 1);
+}
+.company p, .template p, .queries p{
+	margin: 10px 0 0 0;
+	font-size: 10px;
+	text-align: center	;
+	text-transform: uppercase;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+.attribution { 
+	font-size: 11px;
+	text-align: center; 
+	margin-top: 10px;
+}	
+.attribution a {
+	color: hsla(277, 64%, 61%,.5);
+	text-decoration: none;
+}
+
+
+@media screen and (min-width: 376px) {
+	main{
+		display: flex;
+		flex-direction: row-reverse;
+		height: 300px;
+		width: 60%;
+		margin-top: 100px;
+		border-radius: 5px;
+	}	
+	.image{
+		border-radius: 0 5px 5px 0;
+		height: 100%;
+		background-blend-mode: multiply;
+		background-image: url(./images/image-header-desktop.jpg);
+		background-color: hsl(277, 64%, 61%);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.text h2{
+		text-align: left;
+		width: 75%;
+		padding: 5px;
+		margin-top: 45px;
+	}
+	.text p{
+		text-align: left;
+		padding: 5px;
+		margin-top: 20px;
+	}
+	.info{
+		flex-direction: row;
+		justify-content: space-between;
+		width: 75%;
+		margin: auto;
+		margin-top: 40px;
+	}
+	.info p{
+		margin: 0;
+	}
+}
+
